@@ -233,7 +233,8 @@ void rtl_433_ESP::initReceiver(byte inputPin, float receiveFrequency) {
                                RADIOLIB_SX127X_PREAMBLE_DETECTOR_OFF);
   RADIOLIB_STATE(state, "preamble detect off");
 
-  state = radio.setBitRate(32.768);
+  // state = radio.setBitRate(32.768);
+  state = radio.setBitRate(4.800);
   RADIOLIB_STATE(state, "setBitRate");
 
   state = radio.setRxBandwidth(
