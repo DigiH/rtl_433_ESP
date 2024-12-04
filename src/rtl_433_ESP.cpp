@@ -223,7 +223,7 @@ void rtl_433_ESP::initReceiver(byte inputPin, float receiveFrequency) {
     // output power:                        10 dBm
     // preamble length:                     32 bits
 
-    state = radio.setFrequencyDeviation(40); //
+    state = radio.setFrequencyDeviation(80); //
     RADIOLIB_STATE(state, "setFrequencyDeviation");
 
     state = radio.setBitRate(17.24);
